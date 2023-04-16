@@ -12,7 +12,6 @@ import org.junit.jupiter.api.Test;
 public class JDBCTest {
 
 
-
   @Test
   @DisplayName("JDBC 테이블 생성 실습")
   void jdbcTest() throws SQLException {
@@ -27,9 +26,9 @@ public class JDBCTest {
     String password = "pass";
 
     // when
-    try(Connection connection = DriverManager.getConnection(url, username, password)) {
+    try (Connection connection = DriverManager.getConnection(url, username, password)) {
       String createSql = "CREATE TABLE ACCOUNT (id SERIAL PRIMARY KEY, username varchar(255), password varchar(255))";
-      try(PreparedStatement statement = connection.prepareStatement(createSql)) {
+      try (PreparedStatement statement = connection.prepareStatement(createSql)) {
         statement.execute();
       }
     } catch (SQLException e) {

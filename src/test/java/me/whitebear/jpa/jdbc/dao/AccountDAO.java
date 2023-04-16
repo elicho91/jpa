@@ -9,7 +9,7 @@ import me.whitebear.jpa.jdbc.vo.AccountVO;
 
 public class AccountDAO {
 
-    // JDBC 관련 변수
+  // JDBC 관련 변수
   private Connection conn = null;
 
   private PreparedStatement stmt = null;

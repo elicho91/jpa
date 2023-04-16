@@ -2,11 +2,11 @@ package me.whitebear.jpa.jdbc.vo;
 
 public class AccountVO {
 
-    private Integer id;
+  private Integer id;
 
-    private String username;
+  private String username;
 
-    private String password;
+  private String password;
 
   public AccountVO(String username, String password) {
     this.username = username;

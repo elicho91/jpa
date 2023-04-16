@@ -10,8 +10,8 @@
 
   <select id="selectAccount" resultType="me.whitebear.jpastudy.mybatis.vo.AccountMyBatisVO">
     SELECT id,
-           username,
-           password
+    username,
+    password
     FROM account
     WHERE id = #{id}
   </select>
